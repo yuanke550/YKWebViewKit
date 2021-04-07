@@ -17,12 +17,12 @@ public class YKScriptHandler: WebViewScriptHandler {
 	
 	public init(with web: AssociateWeb) {
 		self.web = web
-		setScripts()
+		self.setScripts()
 	}
 	
-	func setScripts() {
-		let test = TestScript(associate: web)
-		scripts.append(test)
+	public func setScripts() {
+		let test = TestScript(associate: AssociateWeb(controller: nil))
+		self.scripts.append(test)
 	}
 
 }

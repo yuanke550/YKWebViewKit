@@ -18,6 +18,7 @@ public protocol WebViewScriptHandler {
 }
 
 extension WebViewScriptHandler {
+	
 	/// script查询
 	/// - Parameter receiveName: 方法名
 	/// - Returns: script
